@@ -16058,12 +16058,17 @@ A note here: we can see that the the fresh produce is the second highest spend, 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The two segments are very different in the sense that in terms of supplies, customers in segment 0 ( restaurants) need more fresh supplies than the other products . 
-Fresh supplies are perishable, so they usually need daily delivery. 
-Thus, if one would like to change the delivery from 5 to 3 days a week, I would look at certain customers in Segment 1 (supermakets) instead. 
-Here, we have also seen that in some cases the spend on fresh produce can be high, right after the grocery spending. 
-Thus, we cannot assume that this change will affect all customers equally, even if they belong to the same segment.</p>
-<p>In order to select customers which would likely have a positive experience after this change, I would start with customers in Segment 1 that have the the spend in Fresh produce in the 25th percentile.</p>
+<p>The two segments are very different in the sense that in terms of supplies, customers in <code>Segment 0</code> ( restaurants/cafes) need more fresh supplies than other products . 
+Fresh supplies are perishable, so they usually need daily delivery.</p>
+<p>Customers in<code>Segment 1</code>, on the other hand, buy both perishable and non perishable products and it is possible that this group will be more accepting in terms of decreasing delivery frequency.</p>
+<p>However we cannot say with certainty what the customer perception will be just with this information.</p>
+<p>Ideally we will run an A/B test to assess this.</p>
+<p>One way of doing this is to select random samples from each of the clusters, concentrated around the cluster centers, considered representative. 
+We can split our selected samples into in test and control groups.</p>
+<p>For the customers included in the test group, we will reduce the delivery frequency to 3 times a week. We need to be careful to not run this experiment over bank holidays or during high/low peak seasons as both restaurants and stores have non typical opening hours and customer traffic.
+Assuming that the period is what we would consider normal, we run our experiment for 2-3 time periods (weeks in this case), then try to get  customer feedback after this period via an online survey/other.</p>
+<p>After the same period, we contact also the control group with the same survey.</p>
+<p>We then compare the results from the two groups and make an informed decision on whether it would be a good idea to reduce the delivery frequency.</p>
 
 </div>
 </div>
